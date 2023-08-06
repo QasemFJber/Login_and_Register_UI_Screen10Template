@@ -13,7 +13,7 @@ class _SplashScreenState extends State<SplashScreen> {
     // TODO: implement initState
     super.initState();
     Future.delayed(Duration(seconds: 3),() {
-
+      Navigator.pushNamedAndRemoveUntil(context, '/login_screen', (route) => false);
     },);
   }
   @override
